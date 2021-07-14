@@ -1,0 +1,64 @@
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+using namespace std;
+int main()
+{
+    double a;
+    cin>>a;
+
+    double numfloat3, numint1;
+
+    numfloat3 = modf(a,&numint1);
+    int numint = numint1,x,numfloat;
+
+    cout<<"NOTAS:"<<endl;
+    cout<<(numint/100)<<" nota(s) de R$ 100.00"<<endl;
+    numint%=100;
+    cout<<(numint/50)<<" nota(s) de R$ 50.00"<<endl;
+    numint%=50;
+    cout<<(numint/20)<<" nota(s) de R$ 20.00"<<endl;
+    numint%=20;
+    cout<<(numint/10)<<" nota(s) de R$ 10.00"<<endl;
+    numint%=10;
+    cout<<(numint/5)<<" nota(s) de R$ 5.00"<<endl;
+    numint%=5;
+    cout<<(numint/2)<<" nota(s) de R$ 2.00"<<endl;
+    numint%=2;
+
+    cout<<"MOEDAS:"<<endl;
+    x = numfloat3*100;
+    numfloat = x%100;
+
+    cout<<(numint/1)<<" moeda(s) de R$ 1.00"<<endl;
+    //numfloat=fmod(numfloat,1.00);
+    numfloat%=100;
+
+    cout<<(numfloat/50)<<" moeda(s) de R$ 0.50"<<endl;
+    //numfloat=fmod(numfloat,0.50);
+    numfloat%=50;
+
+    cout<<(numfloat/25)<<" moeda(s) de R$ 0.25"<<endl;
+    //numfloat=fmod(numfloat,0.25);
+    numfloat%=25;
+
+    cout<<(numfloat/10)<<" moeda(s) de R$ 0.10"<<endl;
+    //numfloat=fmod(numfloat,0.10);
+    numfloat%=10;
+
+    cout<<(numfloat/5)<<" moeda(s) de R$ 0.05"<<endl;
+    //numfloat=fmod(numfloat,0.05);
+    numfloat%=5;
+
+    cout<<(numfloat/1)<<" moeda(s) de R$ 0.01"<<endl;
+    //numfloat=fmod(numfloat,0.01);
+    numfloat%=1;
+
+
+
+
+
+
+
+    return 0;
+}
