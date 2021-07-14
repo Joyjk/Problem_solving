@@ -1,0 +1,33 @@
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+using namespace std;
+int main()
+{
+    double a,b,c,x1,x2,pr1;
+    cin>>a>>b>>c;
+    pr1 = sqrt((b*b)-(4*(a)*(c)));
+
+    if(pr1>0 && a!=0)
+    {
+         x1 = (-b+pr1)/(2*a);
+         x2 = (-b-pr1)/(2*a);
+
+         printf("R1 = %.5lf\n",x1);
+         printf("R2 = %.5lf\n",x2);
+    }
+    else
+    {
+
+        cout<<"Impossivel calcular"<<endl;
+
+    }
+
+
+
+
+
+
+
+    return 0;
+}
