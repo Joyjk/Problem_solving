@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace PracticeMy
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s1, s2;
+            s1 = Console.ReadLine();
+ 
+            s2 = Console.ReadLine();
+ 
+            s1=s1.ToLower();
+            s2=s2.ToLower();
+ 
+ 
+            Console.WriteLine(String.Compare(s1, s2));
+ 
+ 
+        }
+    }
+}
