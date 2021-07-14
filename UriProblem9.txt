@@ -1,0 +1,24 @@
+#include <iostream>
+#include<cstdio>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+   int NUMBER ,b;
+   double c,SALARY ;
+
+    scanf("%d %d",&NUMBER,&b);
+    scanf("%lf",&c);
+
+   SALARY = b*c;
+    printf("NUMBER = %d\n",NUMBER);
+   printf("SALARY = U$ %.2lf\n",SALARY);
+
+
+
+
+
+    return 0;
+}
