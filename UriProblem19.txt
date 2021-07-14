@@ -1,0 +1,50 @@
+
+//1038 - Snack
+#include<iostream>
+#include<cstdio>
+
+using namespace std;
+int main()
+{
+   int a,b;
+   double val=0.0,total;
+   cin>>a>>b;
+   switch(a)
+   {
+       case 1:
+       {
+           val = 4.00;
+           break;
+       }
+       case 2:
+       {
+           val = 4.50;
+           break;
+       }
+       case 3:
+       {
+           val = 5.00;
+           break;
+       }
+       case 4:
+       {
+           val = 2.00;
+           break;
+       }
+       case 5:
+       {
+           val = 1.50;
+           break;
+       }
+   }
+   total = val*b;
+   printf("Total: R$ %.2lf\n",total);
+
+
+
+
+
+
+
+    return 0;
+}
