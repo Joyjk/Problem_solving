@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace PracticeMy
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 0,n;
+ 
+            string op;
+            n = Convert.ToInt32(Console.ReadLine());
+            
+            
+            for(int i=0;i<n;i++)
+            {
+                op=Console.ReadLine();
+                if (op == "++X")
+                {
+                    x++;
+                }
+                if (op == "X++")
+                {
+                    x++;
+                }
+                if (op == "--X")
+                {
+                    //total = x-i;
+                    //x = x-i;
+                    x--;
+ 
+                }
+                if (op == "X--")
+                {
+                    x--;
+                }
+            }
+ 
+            
+ 
+            Console.WriteLine(x);
+ 
+        }
+    }
+}
