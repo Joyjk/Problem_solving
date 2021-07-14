@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace PracticeMy
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s;
+            s = Console.ReadLine();
+            List<char> ss = new List<char>();
+ 
+            char c = s[0];
+            c = Char.ToUpper(c);
+            // s[1] = c;
+            ss.Add(c);
+            for(int i=1;i<s.Length;i++)
+            {
+                ss.Add(s[i]);
+            }
+ 
+            foreach (var item in ss)
+            {
+                Console.Write(item);
+            }
+            
+            
+ 
+ 
+ 
+ 
+          
+ 
+ 
+ 
+ 
+        }
+    }
+}
