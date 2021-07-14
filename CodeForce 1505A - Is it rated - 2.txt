@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+ 
+using namespace std;
+ 
+ 
+ 
+int main(){
+ 
+ 
+ 
+    string b;
+    int m=1;
+ 
+ 
+ 
+    while(m>0){
+        getline(cin,b);
+ 
+        if(b.size()==0){
+            m=0;
+            break;
+        }else{
+            cout << "NO"<< endl;
+        }
+    }
+       return 0;
+ 
+}
