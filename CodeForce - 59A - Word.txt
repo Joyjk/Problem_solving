@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace PracticeMy
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+ 
+            string s;
+            int cap = 0, small = 0;
+ 
+            s = Console.ReadLine();
+ 
+            for (int i = 0; i < s.Length; i++)
+            {
+                int val;
+                char c;
+ 
+                c = s[i];
+ 
+                val = Convert.ToInt32(c);
+ 
+                //Console.WriteLine(val);
+ 
+                if(val>=65&&val<=90)
+                {
+                    cap++;
+                }
+                if(val>=97&&val<=122)
+                {
+                    small++;
+                }
+            }
+ 
+            //Console.WriteLine("small: " + small);
+            //Console.WriteLine("cap: " + cap);
+ 
+            if(cap>small)
+            {
+                s = s.ToUpper();
+            }
+            else if(cap<small)
+            {
+                s = s.ToLower();
+            }
+            else if (cap==small)
+            {
+                s = s.ToLower();
+            }
+ 
+            Console.WriteLine(s);
+ 
+        }
+    }
+}
