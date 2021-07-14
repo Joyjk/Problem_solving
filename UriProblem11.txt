@@ -1,0 +1,32 @@
+#include <iostream>
+#include<cstdio>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+
+   int a,b,x,y;
+   double c,z,c1,z1,ans;
+   scanf("%d",&a);
+   scanf("%d",&b);
+   scanf("%lf",&c);
+   c1=b*c;
+
+   scanf("%d",&x);
+   scanf("%d",&y);
+   scanf("%lf",&z);
+   z1=y*z;
+
+   ans = c1 + z1;
+
+   printf("VALOR A PAGAR: R$ %.2lf\n",ans);
+
+
+
+
+
+
+
+    return 0;
+}
